@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi there!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        h1 {
+            font-size: clamp(3rem, 15vw, 6rem);
+            font-weight: 800;
+            letter-spacing: 0.02em;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+            animation: float 3s ease-in-out infinite;
+        }
+        p {
+            margin-top: 1rem;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            opacity: 0.9;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50%      { transform: translateY(-12px); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            h1 { animation: none; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi! 👋</h1>
+    <p>Nice to see you here.</p>
+</body>
+</html>
